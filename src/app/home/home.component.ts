@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import { Employee } from '../models/employee.model';
 
 @Component({
   selector: 'home',
@@ -8,5 +9,14 @@ import {Component} from '@angular/core';
 export class HomeComponent {
 
   languages = ['English', 'Spanish', 'Other'];
+  model = new Employee('Darla', 'Smith', true, 'w2', 'English');
 
+  // Used to demonstrate syntax on template ngModelChange
+  // firstNameToUpperCase(value: string) {
+  //   if(value.length > 0) {
+  //     this.model.firstName = value.charAt(0).toUpperCase() + value.slice(1);
+  //   } else {
+  //     this.model.firstName = value;
+  //   }
+  // }
 }
