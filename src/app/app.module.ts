@@ -14,6 +14,9 @@ import { RepoListComponent } from './github/repo-list/repo-list.component';
 import { RepoDetailComponent } from './github/repo-detail/repo-detail.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { ContactComponent } from './contact/contact.component';
+import { TimepickerModule, TimepickerComponent } from 'ngx-bootstrap/timepicker';
+// import { DemoTimepickerBasicComponent } from './timepicker/timepicker.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +33,8 @@ import { ContactComponent } from './contact/contact.component';
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    RouterModule.forRoot(rootRouterConfig, { useHash: true })
+    RouterModule.forRoot(rootRouterConfig, { useHash: true }),
+    // TimepickerModule
   ],
   providers: [
     GithubService
